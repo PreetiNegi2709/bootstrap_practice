@@ -1,0 +1,52 @@
+/* #v-pills-tab{
+    display: flex;
+}
+#v-pills-settings-tab{
+    background-color: aliceblue;
+    margin-bottom: 0px;
+} */
+/* body{
+    height:100vh; 
+    width: 100%;
+    background-color: red;
+} */
+
+.d-flex{
+    /* display: flex; justify-content: left; */
+background-color: aqua; height: 100vh; width: 100%;
+/* display: flex; justify-content: center; */
+}
+
+.nav{
+    height: 100vh;
+    width: 25%;
+    background-color: #3d8bfd;
+
+    display: flex;
+    justify-content: space-between;
+}
+#v-pills-disabled-tab{
+    margin-top: 4vh; margin-bottom: 6vh;
+}
+.nav-link{
+    margin-top: 2vh; margin-bottom: 2vh;
+}
+.upper_nav, .lower_nav{
+    margin-left: 1rem;
+}
+
+.left_nav{
+    height: 100vh;
+    width: 25%;
+}
+/* ________________________________________________________________________________________________________________________________________________________ */
+
+.content_area{
+    display: flex; justify-content: center;
+    width: 100%;
+    background-color: orange;
+}
+
+/* .card{
+    display: flex; border-color: red;
+} */
