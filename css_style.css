@@ -1,29 +1,19 @@
-/* #v-pills-tab{
-    display: flex;
-}
-#v-pills-settings-tab{
-    background-color: aliceblue;
-    margin-bottom: 0px;
-} */
-/* body{
-    height:100vh; 
-    width: 100%;
-    background-color: red;
-} */
-
 .d-flex{
     /* display: flex; justify-content: left; */
-background-color: aqua; height: 100vh; width: 100%;
-/* display: flex; justify-content: center; */
+/* background-color: aqua;  */
+min-height: 100vh; width: 100%;
+background-color: red;
 }
 
 .nav{
     height: 100vh;
-    width: 25%;
+    width: 25%; 
     background-color: #3d8bfd;
+    /* position:static; */
 
     display: flex;
     justify-content: space-between;
+
 }
 #v-pills-disabled-tab{
     margin-top: 4vh; margin-bottom: 6vh;
@@ -39,14 +29,105 @@ background-color: aqua; height: 100vh; width: 100%;
     height: 100vh;
     width: 25%;
 }
-/* ________________________________________________________________________________________________________________________________________________________ */
-
-.content_area{
-    display: flex; justify-content: center;
-    width: 100%;
-    background-color: orange;
+.nav_txt{
+    font-size: 3vw;
+}
+.nav_sub_txt{
+    font-size: 1.5vw;
 }
 
-/* .card{
-    display: flex; border-color: red;
-} */
+/* ________________________________________________________________________________________________________________________________________________________ */
+
+.content{
+    height: 100vh; width: 75%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment{
+    flex-direction: column;
+    height: 30vh; width: 80%;
+    /* background-color: lightblue; */
+    display: flex;
+}
+.pym_title{
+    height: 10vh; width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-between;
+}
+.pym_title_l{
+    display: flex;
+    align-items: center;
+}
+.txt_title_l{
+    font-size: 1.5vw;
+}
+.pym_title_r{
+    display: flex;
+    align-items: center;
+}
+.txt_title_r{
+    font-size: 1vw; color: rgb(135, 134, 134);
+}
+
+.pym_detail_box{
+    height: 20vh; width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pym_detail_box_left{
+    height: 20vh; width: 47%;
+    background-color: lightpink;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 0.4rem;
+}
+.box_l{
+    height: 20vh; width: 65%;
+    background-color: grey;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#green_line_box{
+    font-size: 0.7vw; color: green; 
+    background-color: rgba(144, 238, 144, 0.734); 
+    padding: 2px; 
+    border-radius: 3px; 
+    display: inline-block;
+}
+.box_r{
+    height: 20vh; width: 35%;
+    background-color: rgb(255, 188, 188);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pym_detail_box_right{
+    height: 20vh; width: 47%;
+    background-color: blue;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+}
+.box_top{
+    height: 7vh; width: 100%;
+    background-color: gold;
+}
+.box_b{
+    height: 13vh; width: 80%;
+    background-color: plum;
+
+}
+
+.invoice{
+    height: 70vh; width: 80%;
+    background-color: lightcoral;
+    display: flex;
+}

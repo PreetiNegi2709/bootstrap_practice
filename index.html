@@ -9,13 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
-  <!-- <body style="background-color: antiquewhite;"> -->
     <div class="d-flex align-items-start">
         <div class="nav flex-column nav-pills me-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical" >
             <div class="upper_nav">
-                <button class="nav-link fs-2 text-white" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled >Assignment</button>
+                <button class="nav-link fs-2 text-white " id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled > <p class="nav_txt">Assignment</p></button>
                 <button class="nav-link active fs-5 text-white rounded-start-pill " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right:10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house " viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right:10px;">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
                     </svg> HOME</button>
                 <button class="nav-link fs-5 text-white rounded-start-pill" id="v-pills-design-tab " data-bs-toggle="pill" data-bs-target="#v-pills-design" type="button" role="tab" aria-controls="v-pills-design " aria-selected="false" style="border-width:20%">
@@ -47,21 +46,46 @@
             </div>
         </div>
 
-        <div class="content_area">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+        <div class="content">
+          <div class="payment">
+            <div class="pym_title">
+              <div class="pym_title_l">
+                <h1 class="txt_title_l">Payments</h1>
+              </div>
+              <div class="pym_title_r">
+                <div class="txt_title_r">Good Eventing , Jack
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="margin-bottom: 4px;">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
                 </div>
               </div>
+            </div>
+            <div class="pym_detail_box">
+              <div class="pym_detail_box_left">
+                <div class="box_l">
+                  <h1 style="font-size: 1.3vw;">TOTAL RECEIVED</h1>
+                  <h1 style="font-size: 3vw;">84,254.58</h1>
+                  <h1 id="green_line_box">+10% since last month</h1>
+                </div>
+                <div class="box_r">
+                  <h1 style="font-size: 0.7vw; color: blue;">Pending</h1>
+                  <h1 style="font-size: 1vw;">15,000.00</h1>
+                  <h1 style="font-size: 0.7vw;">In drafts</h1>
+                  <h1 style="font-size: 1vw;">1,000.00</h1>
+                </div>
+              </div>
+              <div class="pym_detail_box_right">
+                <div class="box_top">
+                  <h1 style="font-size: 0.9vw;">Powered ny Quickpay</h1> <br>
+                </div>
+                <div class="box_b">
+                  <h2 style="font-size: 0.7vw; margin-left: 0.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla eaque temporibus, facilis quae, et eius itaque molestiae fuga tempora obcaecati illo! Distinctio blanditiis omnis odit fugit nulla velit necessitatibus!</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="invoice"></div>
         </div>
 
     </div>
