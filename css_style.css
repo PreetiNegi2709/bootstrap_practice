@@ -35,11 +35,12 @@ background-color: red;
 .nav_sub_txt{
     font-size: 1.5vw;
 }
-
 /* ________________________________________________________________________________________________________________________________________________________ */
 
 .content{
-    height: 100vh; width: 75%;
+    height: 100vh; 
+    min-height: auto;
+    width: 75%;
     background-color: yellow;
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@ background-color: red;
 .payment{
     flex-direction: column;
     height: 30vh; width: 80%;
+    min-height: auto;
     /* background-color: lightblue; */
     display: flex;
 }
@@ -95,7 +97,7 @@ background-color: red;
     flex-direction: column;
 }
 #green_line_box{
-    font-size: 0.7vw; color: green; 
+    font-size: 0.7vw; color: green; width: 50%;
     background-color: rgba(144, 238, 144, 0.734); 
     padding: 2px; 
     border-radius: 3px; 
@@ -114,18 +116,16 @@ background-color: red;
     background-color: blue;
     border-radius: 0.4rem;
     display: flex;
+    justify-content: space-between;
+}
+.box_r_l{
+    height: 20vh; width: 75%; background-color: antiquewhite;
+    display: flex; justify-content: space-between;
     flex-direction: column;
 }
-.box_top{
-    height: 7vh; width: 100%;
-    background-color: gold;
+.box_r_r{
+    height: auto; width: 25%; background-color: paleturquoise;
 }
-.box_b{
-    height: 13vh; width: 80%;
-    background-color: plum;
-
-}
-
 .invoice{
     height: 70vh; width: 80%;
     background-color: lightcoral;
