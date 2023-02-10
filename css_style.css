@@ -1,6 +1,4 @@
 .d-flex{
-    /* display: flex; justify-content: left; */
-/* background-color: aqua;  */
 min-height: 100vh; width: 100%;
 background-color: red;
 }
@@ -43,19 +41,26 @@ background-color: red;
     width: 75%;
     background-color: yellow;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
+@media (max-width:500px) {
+    .d-flex{height: auto;}
+}
+
 .payment{
     flex-direction: column;
-    height: 30vh; width: 80%;
+    /* height: 30vh;  */
+    width: 80%;
     min-height: auto;
     /* background-color: lightblue; */
     display: flex;
 }
 .pym_title{
-    height: 10vh; width: 100%;
+    height: 10vh; 
+    /* width: 100%; */
     background-color: lightcyan;
     display: flex;
     justify-content: space-between;
@@ -76,20 +81,29 @@ background-color: red;
 }
 
 .pym_detail_box{
-    height: 20vh; width: 100%;
-    display: flex;
+    /* height: 20vh;  */
+    /* width: 100%; */
+    display: grid;
+    flex-wrap: wrap;
+    background-color: red;
+    /* align-items: center; */
     justify-content: space-between;
 }
 .pym_detail_box_left{
-    height: 20vh; width: 47%;
+    /* height: 20vh;  */
+    /* width: 47%; */
+    max-width: 60%;
     background-color: lightpink;
     display: flex;
+    flex:1 1 300px; 
+    padding: 2px;
     /* align-items: center;
     justify-content: center; */
     border-radius: 0.4rem;
 }
 .box_l{
-    height: 20vh; width: 65%;
+    /* height: 20vh; */
+     width: 65%;
     background-color: grey;
     margin-left: 0.5rem;
     display: flex;
@@ -104,7 +118,8 @@ background-color: red;
     display: inline-block;
 }
 .box_r{
-    height: 20vh; width: 35%;
+    /* height: 20vh;  */
+    width: 35%;
     background-color: rgb(255, 188, 188);
     display: flex;
     justify-content: center;
@@ -112,14 +127,19 @@ background-color: red;
 }
 
 .pym_detail_box_right{
-    height: 20vh; width: 47%;
+    /* height: 20vh;  */
+    /* width: 47%; */
     background-color: blue;
     border-radius: 0.4rem;
     display: flex;
-    justify-content: space-between;
+    flex:1 1 300px;
+    padding: 2px; 
+    max-width: 60%;
+    /* justify-content: space-between; */
 }
 .box_r_l{
-    height: 20vh; width: 75%; background-color: antiquewhite;
+    /* height: 20vh;  */
+    width: 75%; background-color: antiquewhite;
     display: flex; justify-content: space-between;
     flex-direction: column;
 }
@@ -127,7 +147,9 @@ background-color: red;
     height: auto; width: 25%; background-color: paleturquoise;
 }
 .invoice{
-    height: 70vh; width: 80%;
+    /* height: 70vh;  */
+    width: 80%;
     background-color: lightcoral;
     display: flex;
+    flex-direction: column;
 }
